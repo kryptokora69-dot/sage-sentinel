@@ -1,0 +1,6 @@
+.env
+*.key
+logs/
+__pycache__/
+.env.*
+!.env.example
