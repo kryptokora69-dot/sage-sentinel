@@ -1,0 +1,15 @@
+# Warden's rules. Hard caps live as constants in agents/guard.py; these must not exceed them.
+mode: paper
+max_position_usd: 50
+max_daily_loss_usd: 20
+kill_switch: false
+max_age_seconds: 300
+min_sage_p: 0.55
+allowed_endpoints:
+  - api.coingecko.com
+  - api.coinbase.com
+  - www.okx.com
+  - api.dexscreener.com
+  - api.llama.fi
+  - stablecoins.llama.fi
+  - rpc.mainnet.near.org

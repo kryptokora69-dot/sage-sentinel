@@ -1,0 +1,5 @@
+time_et,asset,event,side,price,leverage,stop,target,realized_pnl_usd,r_multiple,reason,sage_p,sage_band
+2026-01-05T10:00:00-05:00,NEAR,ENTRY,long,3.000000,2.0,2.900000,3.200000,0.0,,synthetic_breakout,,
+2026-01-05T12:00:00-05:00,NEAR,EXIT,long,3.150000,2.0,2.900000,3.200000,1.50,0.75,TARGET,,
+2026-01-06T09:00:00-05:00,AAA,ENTRY,short,10.000000,3.0,10.400000,9.200000,0.0,,synthetic_fade,,
+2026-01-06T11:00:00-05:00,AAA,EXIT,short,10.400000,3.0,10.400000,9.200000,-1.20,-1.0,STOP,,

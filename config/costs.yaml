@@ -1,0 +1,10 @@
+# Early, small-sample estimates (USD per call). null = not measured yet.
+routes:
+  nearai:
+    sage: 0.000010            # levanto/sage-1.4 on NEAR AI Cloud
+    chat: 0.000577            # DeepSeek-V4.1-Flash on NEAR AI Cloud
+  orbio:
+    jev: 0.000014             # Orbio backup on Jev models
+    sage: null                # Sage on Orbio: not measured yet
+  mock:
+    sage: 0.0

@@ -1,0 +1,17 @@
+name: ci
+on: [push, pull_request]
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 0}
+      - uses: gitleaks/gitleaks-action@v2
+        env: {GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"}
+      - name: Block signing libraries
+        run: |
+          if grep -rEn --include='*.py' --include='requirements*.txt' '^\s*(import|from)\s+(near_api|web3|eth_account|solders|py_near)\b|^(near-api-py|web3|eth-account|eth_account|solders|py-near|py_near)\b' .; then
+            echo "Signing library detected"; exit 1; fi
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11"}
+      - run: pip install -r requirements.txt && python replay.py

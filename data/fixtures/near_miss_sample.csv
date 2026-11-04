@@ -1,0 +1,6 @@
+ts_ET,symbol,side,conditions_passed/total,failed_conditions,price,ema20,ema50,ema_dist_pct,rs_gap_1h,rs_gap_4h,rs_regime,prior_level,atr15,sweep_depth_atr,bar_t_ms
+2026-01-05T10:00:00-05:00,NEAR,long,8/8,,3.00,2.98,2.95,0.67,0.0010,0.0020,stronger,2.97,0.02,-1.1,1767625200000
+2026-01-05T11:00:00-05:00,AAA,short,7/8,sweep_above_prior_high,10.00,10.02,10.10,-0.99,-0.0005,-0.0010,weaker,10.05,0.05,-0.8,1767628800000
+2026-01-05T12:00:00-05:00,BBB,long,8/8,,120.0,119.5,118.0,1.69,0.0008,0.0011,stronger,119.0,0.9,-1.4,1767632400000
+2026-01-05T13:00:00-05:00,NEAR,long,6/8,rs_stronger;sweep_below_prior_low,3.05,3.06,3.04,0.33,-0.0002,0.0001,none,3.01,0.02,-0.5,1767636000000
+2026-01-05T14:00:00-05:00,CCC,long,8/8,,,1.00,0.98,2.0,0.0004,0.0005,stronger,0.99,0.01,-1.0,1767639600000
